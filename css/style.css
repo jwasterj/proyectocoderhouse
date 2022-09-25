@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:wght@300&display=swap');
+
+*{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	background-color: white;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+header{
+	width: 100%;
+	height: 120px;
+	background-image: url(../multimedia/bghead.png);
+}
+
+nav{
+	width: 100%;
+	height: auto;
+	background-color: rgb(223, 132, 27);
+	position: sticky;
+	top: 0;
+	padding: 15px 0px 15px 0px;
+}
+
+nav ul{
+		display: flex;
+		justify-content: space-around;
+		
+}
+
+nav ul li{
+		list-style: none;
+		margin-right: 20px;
+}
+
+nav ul li a{
+			font-size: 1.8rem;
+			font-weight: bold;
+			text-decoration: none;
+			color: #353535;
+}
+
+nav ul li a:hover{
+	color: black;
+	font-weight: 600;
+}
+
+.indexbg{
+	background-image: url(../multimedia/pizza.jpg);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+main{
+	width: 100%;
+	height: auto;
+	background-image: url(../multimedia/bgmain.png);
+}
+
+main section{
+	width: 70%;
+	height: auto;
+}
+
+.slogan{
+	font-size: 7.5rem;
+	background-color: #000000b4;
+	color: whitesmoke;
+	font-weight: bold;
+	margin-left: 15px;
+	width: auto;
+	line-height: normal;
+	text-align: left;
+}
+
+footer{
+	height: 60px;
+	width: 100%;
+	background-color: rgb(223, 132, 27);
+	display: flex;
+	align-items: center;
+}
+
+footer ul{
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+footer ul li{
+	list-style: none;
+	margin-right: 1.5rem;
+}
+
+footer ul li h2{
+	font-size: 2rem;
+	margin-left: 15px;
+}
+footer ul li a img{
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.multisect{
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.nosotros{
+	width: 100%;
+}
+
+main section h1{
+	font-size: 5rem;
+	font-weight: bold;
+	margin: 5px;
+}
+
+main section p{
+	font-size: 2rem;
+	line-height: 3.5rem;
+	margin: 25px;
+	text-align: justify;
+}
+
+.trabaja1{
+	width: 100%;
+}
+
+.trabaja2{
+	width: 100%;
+}
+
+form{
+	margin: 25px;
+	font-size: 3rem;
+}
+
+.contacto1{
+	text-align: center;
+	width: 100%;
+}
+
+.contacto2{
+	text-align: center;
+	width: 100%;
+}
+
+iframe{
+	margin: 15px;
+	width: 85% ;
+	height: 300px;
+}
+
+.cont{
+	margin: 50px 50px 20px 50px;
+}
+
+.contp{
+	margin: 50px 50px 20px 65px;
+}
+
+.grid{
+	display: grid;
+	grid-template-areas: "t1" "piz1" "piz2" "piz3" "piz4" "piz5" "piz6" "t2" "pas1" "pas2" "pas3" "pas4" "pas5" "pas6" "t3" "beb1" "beb2" "beb3";
+}
+
+.tit1{grid-area: t1;
+	padding-top: 10px;
+}
+.tit2{grid-area: t2;
+	padding-top: 10px;
+}
+.tit3{grid-area: t3;
+	padding-top: 10px;
+}
+.piz1{grid-area: piz1}
+.piz2{grid-area: piz2}
+.piz3{grid-area: piz3}
+.piz4{grid-area: piz4}
+.piz5{grid-area: piz5}
+.piz6{grid-area: piz6}
+.pas1{grid-area: pas1}
+.pas2{grid-area: pas2}
+.pas3{grid-area: pas3}
+.pas4{grid-area: pas4}
+.pas5{grid-area: pas5}
+.pas6{grid-area: pas6}
+
+.menu{
+	font-size: 3rem;
+	text-align: center;
+	padding-top: 10px;
+	height: auto;
+}
+img.menu{
+	width: 80%;
+	height: 200px;
+	margin: 5%;
+}
+	
+section ul{
+	list-style: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+	
+	nav{
+		width: 100%;
+		height: auto;
+		background-color: rgb(223, 132, 27);
+		position: sticky;
+		top: 0;
+		padding: 15px 0px 15px 0px;
+	}
+	
+	nav ul{
+			display: flex;
+			justify-content: space-around;
+			
+	}
+	
+	nav ul li{
+			list-style: none;
+			margin-right: 20px;
+	}
+	
+	nav ul li a{
+				font-size: 1.8rem;
+				font-weight: bold;
+				text-decoration: none;
+				color: #353535;
+	}
+	
+	nav ul li a:hover{
+		color: black;
+		font-weight: 600;
+	}
+
+	
+	main{
+		height: 900px;
+	}
+	
+
+	main section p{
+		font-size: 3rem;
+		line-height: 4rem;
+		margin: 25px;
+	}
+
+	.multisect{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+	
+	.nosotros{
+		width: 50%;
+	}
+	
+	.trabaja1{
+		width: 55%;
+	}
+	
+	.trabaja2{
+		width: 45%;
+	}
+	
+	.contacto1{
+		width: 40%;
+		text-align: center;
+	}
+	
+	.contacto2{
+		width: 60%;
+	}
+	
+	iframe{
+		margin: 15px;
+		height: 600px;
+	}
+	
+	
+	.grid{
+		display: grid;
+		grid-template-areas: "t1 t1 t2 t2 t3" "piz1 piz2 pas1 pas2 beb1" "piz3 piz4 pas3 pas4 beb2" "piz5 piz6 pas5 pas6 beb3";
+	}
+	
+	
+}
