@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:wght@300&display=swap');
+
+$default-margin: 15px;
+$default-padding: 10px;
+
+*{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+    object-fit: cover;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+	background-color: white;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+nav{
+	background-image: url(../multimedia/bghead.png);
+    ul li a:hover{
+        color: black;
+	    font-weight: 600;
+    }
+    a img{
+        width: 70%;
+    }
+}
+
+.indexbg{
+	background-image: url(../multimedia/pizza.jpg);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+main{
+	width: 100%;
+	height: auto;
+	background-image: url(../multimedia/bgmain.png);
+    section{
+        width: 70%;
+        height: auto;
+        h1{
+            font-size: 5rem;
+            font-weight: bold;
+            margin: $default-margin;
+        }
+        p{
+            font-size: 2rem;
+            line-height: 3.5rem;
+            margin: 25px;
+            text-align: justify;
+        }
+    }
+}
+
+.slogan{
+	font-size: 7.5rem;
+	background-color: #000000b4;
+	color: whitesmoke;
+	font-weight: bold;
+	margin-left: 15px;
+	width: auto;
+	line-height: normal;
+	text-align: left;
+}
+
+footer{
+	height: 60px;
+	width: 100%;
+	background-color: rgb(223, 132, 27);
+	display: flex;
+	align-items: center;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        li{
+            list-style: none;
+            margin-right: $default-margin;
+            h2{
+                font-size: 2rem;
+                margin-left: $default-margin;
+            }
+            a img{
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+    }
+}
+
+.multisect{
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.nosotros{
+	width: 100%;
+}
+
+.trabaja1{
+	width: 100%;
+}
+
+.trabaja2{
+	width: 100%;
+}
+
+form{
+	margin: 25px;
+	font-size: 3rem;
+}
+
+.contacto1{
+	text-align: center;
+	width: 100%;
+}
+
+.contacto2{
+	text-align: center;
+	width: 100%;
+}
+
+iframe{
+	margin: $default-margin;
+	width: 85% ;
+	height: 300px;
+}
+
+.cont{
+	margin: 50px 50px 20px 50px;
+}
+
+.contp{
+	margin: 50px 50px 20px 65px;
+}
+
+.grid{
+	display: grid;
+	grid-template-areas: "t1" "piz1" "piz2" "piz3" "piz4" "piz5" "piz6" "t2" "pas1" "pas2" "pas3" "pas4" "pas5" "pas6" "t3" "beb1" "beb2" "beb3";
+}
+
+@for $i from 1 through 3{
+    .tit#{$i}{grid-area: t#{$i};
+    padding-top: $default-padding;
+    }
+}
+
+@for $i from 1 through 6{
+    .piz#{$i}{grid-area: piz#{$i};
+    }
+}
+
+@for $i from 1 through 6{
+    .pas#{$i}{grid-area: pas#{$i};
+    }
+}
+
+@for $i from 1 through 3{
+    .beb#{$i}{grid-area: beb#{$i};
+    }
+}
+
+.menu{
+	font-size: 3rem;
+	text-align: center;
+	padding-top: $default-padding;
+	height: auto;
+}
+
+img.menu{
+	width: 80%;
+	height: 200px;
+	margin: 5%;
+}
+
+img.menu:hover{
+	transform: scale(1.1);
+	transition: .3s;
+}
+	
+section ul{
+	list-style: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+	
+	nav ul li{
+			margin-right: 20px;
+            a:hover{
+                color: black;
+                font-weight: 800;
+            }
+	}
+	
+	main{
+		height: 900px;
+        section p{
+            font-size: 3rem;
+            line-height: 4rem;
+            margin: 25px;
+        }
+	}
+
+	.multisect{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+        height: auto;
+	}
+	
+	.nosotros{
+		width: 50%;
+	}
+	
+	.trabaja1{
+		width: 55%;
+	}
+	
+	.trabaja2{
+		width: 45%;
+	}
+	
+	.contacto1{
+		width: 40%;
+		text-align: center;
+	}
+	
+	.contacto2{
+		width: 60%;
+	}
+	
+	iframe{
+		margin: $default-margin;
+		height: 600px;
+	}
+	
+	.grid{
+		display: grid;
+		grid-template-areas: "t1 t1 t2 t2 t3" "piz1 piz2 pas1 pas2 beb1" "piz3 piz4 pas3 pas4 beb2" "piz5 piz6 pas5 pas6 beb3";
+	}
+}
