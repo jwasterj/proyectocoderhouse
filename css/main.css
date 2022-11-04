@@ -22,6 +22,7 @@ nav {
     width: 70%; }
 
 .indexbg {
+  height: 900px;
   background-image: url(../multimedia/pizza.jpg);
   background-size: cover;
   display: flex;
@@ -32,10 +33,10 @@ main {
   height: auto;
   background-image: url(../multimedia/bgmain.png); }
   main section {
-    width: 70%;
+    width: 100%;
     height: auto; }
     main section h1 {
-      font-size: 5rem;
+      font-size: 3.5rem;
       font-weight: bold;
       margin: 15px; }
     main section p {
@@ -78,7 +79,8 @@ footer {
   flex-direction: column-reverse; }
 
 .nosotros {
-  width: 100%; }
+  width: 100%;
+  height: auto; }
 
 .trabaja1 {
   width: 100%; }
@@ -88,7 +90,7 @@ footer {
 
 form {
   margin: 25px;
-  font-size: 3rem; }
+  font-size: 2rem; }
 
 .contacto1 {
   text-align: center;
@@ -104,10 +106,12 @@ iframe {
   height: 300px; }
 
 .cont {
-  margin: 50px 50px 20px 50px; }
+  margin: 50px 50px 20px 50px;
+  font-weight: bold; }
 
 .contp {
-  margin: 50px 50px 20px 65px; }
+  margin: 50px 50px 20px 65px;
+  text-align: center; }
 
 .grid {
   display: grid;
@@ -188,18 +192,28 @@ img.menu:hover {
 section ul {
   list-style: none; }
 
+label {
+  margin: 15px; }
+
+img.trabajaimg {
+  height: 600px; }
+
 @media only screen and (min-width: 768px) {
   nav ul li {
     margin-right: 20px; }
     nav ul li a:hover {
       color: black;
       font-weight: 800; }
-  main {
-    height: 900px; }
+  main section {
+    width: 70%; }
+    main section h1 {
+      font-size: 5rem; }
     main section p {
       font-size: 3rem;
       line-height: 4rem;
       margin: 25px; }
+  section.menu {
+    width: 100%; }
   .multisect {
     display: flex;
     flex-direction: row;
@@ -211,6 +225,10 @@ section ul {
     width: 55%; }
   .trabaja2 {
     width: 45%; }
+  form {
+    font-size: 3rem; }
+  .cont {
+    font-size: 4rem; }
   .contacto1 {
     width: 40%;
     text-align: center; }
@@ -218,7 +236,9 @@ section ul {
     width: 60%; }
   iframe {
     margin: 15px;
-    height: 600px; }
+    height: 850px; }
   .grid {
     display: grid;
-    grid-template-areas: "t1 t1 t2 t2 t3" "piz1 piz2 pas1 pas2 beb1" "piz3 piz4 pas3 pas4 beb2" "piz5 piz6 pas5 pas6 beb3"; } }
+    grid-template-areas: "t1 t1 t2 t2 t3" "piz1 piz2 pas1 pas2 beb1" "piz3 piz4 pas3 pas4 beb2" "piz5 piz6 pas5 pas6 beb3"; }
+  img.trabajaimg {
+    height: auto; } }
